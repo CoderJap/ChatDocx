@@ -9,5 +9,5 @@ streamlit==1.39.0
 Werkzeug==3.0.4
 streamlit   
 langchain-community    
-entence-transformers     
+sentence-transformers     
 faiss-cpu 
