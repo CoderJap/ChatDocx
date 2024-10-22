@@ -67,6 +67,10 @@ def show_landing_page():
     body {
         background-color: #f0f2f6;
     }
+    .line {
+        text-align:center;
+        color:#2c3e50;
+    }
     .landing-title {
         font-size: 60px;
         font-weight: bold;
@@ -123,8 +127,11 @@ def show_landing_page():
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         # Try Notebook Button
-        if st.button("Try Notebook"):
+        if st.button("Try Notebook "):
             st.session_state.page = 'chat'
+            
+    st.markdown(f"""<div class="line">double click to create notebook</div>""", unsafe_allow_html=True)
+            
 
 def show_chat_page():
     # Display the currently active chat title at the top
